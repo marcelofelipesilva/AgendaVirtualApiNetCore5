@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using AgendaVirtualApi.Business.Entities;
 
-namespace AgendaVirtualApi.Business.Repositories
+namespace AgendaVirtualApi.Business.IRepositories
 {
     public interface ITarefasRepository
     {
