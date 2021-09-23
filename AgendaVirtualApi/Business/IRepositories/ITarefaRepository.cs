@@ -3,7 +3,7 @@ using AgendaVirtualApi.Business.Entities;
 
 namespace AgendaVirtualApi.Business.IRepositories
 {
-    public interface ITarefasRepository
+    public interface ITarefaRepository
     {
         void Adicionar(Tarefa tarefa);
         void Commit();
