@@ -6,10 +6,6 @@ namespace AgendaVirtualApi.Infra.Data
 {
     public class AgendaVirtualApiDbContext : DbContext
     {
-        public DbSet<Contato> Contatos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Tarefa> Tarefas { get; set; }
-
         public AgendaVirtualApiDbContext(DbContextOptions<AgendaVirtualApiDbContext> options) : base(options)
         {
             
@@ -26,5 +22,10 @@ namespace AgendaVirtualApi.Infra.Data
         { 
             optionsBuilder.UseSqlServer(@"Server=172.17.0.6;Database=agandaVirtualApiBD;User Id=sa;Password=App@12345;");
         }
+        
+        public DbSet<Contato> Contatos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Tarefa> Tarefas { get; set; }
+
     }
 }

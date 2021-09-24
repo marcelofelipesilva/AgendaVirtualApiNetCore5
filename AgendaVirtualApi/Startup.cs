@@ -1,4 +1,5 @@
 using AgendaVirtualApi.Business.IRepositories;
+using AgendaVirtualApi.Infra.Data;
 using AgendaVirtualApi.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,7 +23,7 @@ namespace AgendaVirtualApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+            services.AddDbContext<AgendaVirtualApiDbContext>();
             services.AddScoped<IContatoRepository, ContatoRepository>();
             services.AddScoped<ITarefaRepository, TarefaRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();

@@ -10,6 +10,7 @@ namespace AgendaVirtualApi.Configurations
         {
             var optionsBuilder = new DbContextOptionsBuilder<AgendaVirtualApiDbContext>();
             
+            
             AgendaVirtualApiDbContext contexto = new AgendaVirtualApiDbContext(optionsBuilder.Options);
             return contexto;
         }
