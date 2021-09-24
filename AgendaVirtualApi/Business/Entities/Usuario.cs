@@ -5,14 +5,14 @@ namespace AgendaVirtualApi.Business.Entities
 {
     public class Usuario
     {
-       // [Key]
-      //  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+       [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UsuarioID { get; set; }
-     //   [Required]
-     //   [StringLength(8)]
+        [Required]
+        [StringLength(8)]
         public string Login { get; set; }
-    //    [Required]
-    //    [StringLength(6)]
+       [Required] 
+       [StringLength(6)]
         public string Senha { get; set; }   
     }
 }
