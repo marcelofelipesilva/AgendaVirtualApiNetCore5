@@ -1,15 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AgendaVirtualApi.Business.IRepositories;
+using AgendaVirtualApi.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace AgendaVirtualApi
@@ -27,6 +22,11 @@ namespace AgendaVirtualApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
+            services.AddScoped<IContatoRepository, ContatoRepository>();
+            services.AddScoped<ITarefaRepository, TarefaRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "AgendaVirtualApi", Version = "v1"});
