@@ -1,0 +1,9 @@
+namespace AgendaVirtualApi.Models.Contato
+{
+    public class ContatoViewModelOutput
+    {
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+    }
+}
