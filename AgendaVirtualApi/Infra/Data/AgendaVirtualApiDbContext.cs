@@ -20,7 +20,7 @@ namespace AgendaVirtualApi.Infra.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
-            optionsBuilder.UseSqlServer(@"Server=172.17.0.6;Database=agendaVirtualApiBD;User Id=sa;Password=App@12345;");
+            optionsBuilder.UseSqlServer(@"Server=172.17.0.6;Database=agendaVirtualApiBD;User Id=sa;Password=senha123;");
         }
         
         public DbSet<Contato> Contatos { get; set; }

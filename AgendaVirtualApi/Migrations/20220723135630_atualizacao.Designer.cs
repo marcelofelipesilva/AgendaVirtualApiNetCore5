@@ -6,26 +6,30 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace AgendaVirtualApi.Migrations
 {
     [DbContext(typeof(AgendaVirtualApiDbContext))]
-    [Migration("20210925111834_inicial")]
-    partial class inicial
+    [Migration("20220723135630_atualizacao")]
+    partial class atualizacao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.10")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "6.0.7")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("AgendaVirtualApi.Business.Entities.Contato", b =>
                 {
                     b.Property<int>("ContatoID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContatoID"), 1L, 1);
 
                     b.Property<string>("Email")
                         .HasMaxLength(50)
@@ -41,15 +45,16 @@ namespace AgendaVirtualApi.Migrations
 
                     b.HasKey("ContatoID");
 
-                    b.ToTable("TB_CONTATO");
+                    b.ToTable("TB_CONTATO", (string)null);
                 });
 
             modelBuilder.Entity("AgendaVirtualApi.Business.Entities.Tarefa", b =>
                 {
                     b.Property<int>("TarefaID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TarefaID"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasMaxLength(350)
@@ -65,15 +70,16 @@ namespace AgendaVirtualApi.Migrations
 
                     b.HasKey("TarefaID");
 
-                    b.ToTable("TB_TAREFA");
+                    b.ToTable("TB_TAREFA", (string)null);
                 });
 
             modelBuilder.Entity("AgendaVirtualApi.Business.Entities.Usuario", b =>
                 {
                     b.Property<int>("UsuarioID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioID"), 1L, 1);
 
                     b.Property<string>("Login")
                         .IsRequired()
@@ -87,7 +93,7 @@ namespace AgendaVirtualApi.Migrations
 
                     b.HasKey("UsuarioID");
 
-                    b.ToTable("TB_USUARIO");
+                    b.ToTable("TB_USUARIO", (string)null);
                 });
 #pragma warning restore 612, 618
         }

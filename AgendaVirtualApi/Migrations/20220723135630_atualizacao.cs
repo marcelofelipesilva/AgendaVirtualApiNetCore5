@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
+#nullable disable
+
 namespace AgendaVirtualApi.Migrations
 {
-    public partial class inicial : Migration
+    public partial class atualizacao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
