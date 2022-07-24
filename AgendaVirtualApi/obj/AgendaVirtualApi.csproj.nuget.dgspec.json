@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/AgendaVirtualApi.csproj": {}
+    "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/AgendaVirtualApi.csproj": {}
   },
   "projects": {
-    "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/AgendaVirtualApi.csproj": {
+    "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/AgendaVirtualApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/AgendaVirtualApi.csproj",
+        "projectUniqueName": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/AgendaVirtualApi.csproj",
         "projectName": "AgendaVirtualApi",
-        "projectPath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/AgendaVirtualApi.csproj",
+        "projectPath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/AgendaVirtualApi.csproj",
         "packagesPath": "/home/marcelo/.nuget/packages/",
-        "outputPath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/obj/",
+        "outputPath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/marcelo/.nuget/NuGet/NuGet.Config"

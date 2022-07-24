@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Un656l/QuY5MQnznoIMg4koRUX/+4WaVAguMeClus7XIU3voErRxPAFJajRciFiIzUS9vqQt4T+tVXUTJ0F40Q==",
+  "dgSpecHash": "y8V4oS+aLjsnoYgVT+IWezb5AfXUPCMAhvzm6+FcyzxWoWuII/0zsY4T3unL41hP+leHfQwRUTcX2i6d9jbAuA==",
   "success": true,
-  "projectFilePath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore5/AgendaVirtualApi/AgendaVirtualApi.csproj",
+  "projectFilePath": "/home/marcelo/SOURCE/PROJETOS__DOTNET/AgendaVirtualApiNetCore/AgendaVirtualApi/AgendaVirtualApi.csproj",
   "expectedPackageFiles": [
     "/home/marcelo/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/marcelo/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
