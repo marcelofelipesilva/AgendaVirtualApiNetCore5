@@ -1,5 +1,5 @@
 #  Projeto Api Agenda Virtual.
-
+Atualizado para .net core 6.
 A agenda deverá permitir ao usuário cadastrar novos contatos. Cada contato deverá ter
 um nome, email e telefone. O sistema ainda deverá permitir a listagem dos contatos e
 exclusão e atualização dos dados de um contato.
